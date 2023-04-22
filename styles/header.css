@@ -91,11 +91,13 @@ ul {
 .entrar:hover {
     transform: scale(1.1);
     background-color: var(--cor-vermelho2);
+    cursor: pointer;
 }
 
 .cadastrar:hover {
     transform: scale(1.1);
     background-color: var(--cor-vermelho2);
+    cursor: pointer;
 }
 
 @media (max-width: 1000px) {
