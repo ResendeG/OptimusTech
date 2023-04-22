@@ -1,0 +1,93 @@
+.vagas {
+    display: flex;
+    flex-direction: column;
+}
+
+.vagas__titulo {
+    font-size: 2.25rem;
+    color: var(--cor-titulo);
+    padding: 1rem 0 1.25rem 0;
+}
+
+.vagas__texto {
+    font-size: 0.875rem;
+    font-weight: 400;
+    padding-bottom: 2rem;
+}
+
+.vagas__disponiveis {
+    display: flex;
+    color: var(--cor-titulo);
+    flex-direction: column;
+    padding: 0 21rem;
+}
+
+.cargos__disponiveis {
+    font-size: 1.25rem;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+}
+
+.vagas__cargos {
+    font-size: 1.125rem;
+    padding: 1.5rem;
+}
+
+.cargos__texto {
+    display: flex;
+    padding-left: 1.5rem;
+    color: var(--cor-texto);
+}
+
+.descricao {
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.borda__vagas {
+    border: 1px solid var(--cor-borda);
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;    
+}
+
+.borda__vagas:hover {
+    transform: scale(1.025);
+    border: 1px solid var(--cor-vermelho);
+    background-color: var(--bg-vermelho);
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .vagas__disponiveis {      
+        padding: 0 3rem;
+        text-align: center;
+    }
+
+    .vagas__responsivo {
+        display: flex;        
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: initial;
+    }
+    
+    .borda__vagas {
+        width: 45%;
+        margin: 1rem;
+    }    
+}
+
+@media (max-width: 775px) {
+    .borda__vagas {
+        width: 60%;
+    }
+
+    .vagas__disponiveis {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .borda__vagas {
+        width: 90%
+    }
+}
